@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>岡山市エコツーリズム | Okayama Eco‑Tourism</title>
+  <meta name="description" content="岡山市のエコツーリズム：後楽園、倉敷美観地区、瀬戸内海をやさしく紹介" />
+  <link rel="preconnect" href="https://images.unsplash.com"/>
+  <style>
+    :root{--bg:#f7fdf8;--fg:#0f172a;--brand:#059669;--muted:#475569;--card:#ffffff;--ring:#a7f3d0}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:-apple-system,system-ui,Segoe UI,Roboto,Helvetica,Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:var(--fg);background:var(--bg)}
+    a{color:var(--brand);text-decoration:none}
+    img{display:block;max-width:100%;height:auto}
+    .container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+    header{position:sticky;top:0;background:rgba(255,255,255,.8);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid #eaf7ef;z-index:20}
+    header .inner{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    header .brand{display:flex;gap:8px;align-items:center;font-weight:700;color:#065f46}
+    header nav a{margin-left:16px;color:#065f46;font-size:14px}
+    header .cta{padding:8px 14px;background:#059669;color:#fff;border-radius:12px;font-size:14px}
+
+    .hero{position:relative;min-height:62vh;display:grid;place-items:center;overflow:hidden}
+    .hero::before{content:"";position:absolute; inset:0;background:url('https://commons.wikimedia.org/wiki/Special:FilePath/Korakuen%20(japanese%20garden)%20and%20Okayama%20castle.jpg') center/cover no-repeat;filter:brightness(.6);z-index:0;}
+    .hero .content{position:relative;color:#fff;text-align:center;padding:64px 16px}
+    .title{font-size:clamp(28px,5vw,48px);font-weight:800;line-height:1.1;margin:0 0 8px}
+    .subtitle{font-size:clamp(14px,2.4vw,18px);opacity:.95;margin:0}
+    .pillbar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+    .pill{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:6px 12px;font-size:12px}
+
+    .section{padding:48px 0}
+    .section h2{font-size:24px;margin:0 0 8px}
+    .section p.lead{color:var(--muted);margin:0 0 20px}
+    .grid{display:grid;grid-template-columns:1fr;gap:18px}
+    @media(min-width:720px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);border:1px solid #d1fae5;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(0,0,0,.04)}
+    .card-body{padding:14px 14px 18px}
+    .tag{display:inline-block;font-size:12px;color:#065f46;background:#ecfdf5;border:1px solid #d1fae5;border-radius:999px;padding:4px 10px;margin-top:-12px}
+    .card h3{margin:8px 0 6px;font-size:18px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .list{margin:10px 0 0;padding-left:18px;color:var(--muted)}
+
+    footer{border-top:1px solid #eaf7ef;background:#fff}
+    footer .inner{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:18px 0;color:#475569;font-size:14px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container inner">
+      <div class="brand">🌿 <ruby>岡山<rt>おかやま</rt>市エコツーリズム</ruby></div>
+      <nav>
+        <a href="#spots">スポット</a>
+        <a href="#tips">エコのポイント</a>
+      </nav>
+      <a class="cta" href="#spots">見る</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="content container">
+      <h1 class="title"><ruby>自然<rt>しぜん</rt></ruby>と人にやさしい<ruby>旅<rt>たび</rt></ruby>を、岡山で</h1>
+      <p class="subtitle">Eco‑friendly adventures in Okayama — <ruby>後楽園<rt>こうらくえん</rt></ruby>・<ruby>倉敷美観地区<rt>くらしきびかんちく</rt></ruby>・<ruby>瀬戸内海<rt>せとないかい</rt></ruby></p>
+      <div class="pillbar">
+        <div class="pill">♻️ <ruby>低<rt>てい</rt></ruby>インパクト</div>
+        <div class="pill">🚲 カーシェア＆<ruby>自転車<rt>じてんしゃ</rt></ruby></div>
+        <div class="pill">🌾 <ruby>地産地消<rt>ちさんちしょう</rt></ruby></div>
+      </div>
+    </div>
+  </section>
+
+  <main class="section" id="spots">
+    <div class="container">
+      <p class="lead">岡山の<ruby>定番<rt>ていばん</rt></ruby>スポットを、エコの<ruby>視点<rt>してん</rt></ruby>で<ruby>紹介<rt>しょうかい</rt></ruby>します。</p>
+      <div class="grid">
+        <!-- Korakuen -->
+        <article class="card">
+          <img alt="Okayama Korakuen Garden"src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Okayama_Korakuen_Garden01.jpg" />
+            <div class="card-body">
+            <span class="tag"><ruby>後楽園<rt>こうらくえん</rt></ruby></span>
+            <h3><ruby>庭園<rt>ていえん</rt></ruby>を<ruby>歩<rt>ある</rt></ruby>いて<ruby>四季<rt>しき</rt></ruby>を感じる</h3>
+            <p><ruby>静<rt>しず</rt></ruby>かな<ruby>園路<rt>えんろ</rt></ruby>でゆっくり。<ruby>給水所<rt>きゅうすいじょ</rt></ruby>でマイボトルに<ruby>補給<rt>ほきゅう</rt></ruby>し、ゴミは<ruby>持<rt>も</rt></ruby>ち<ruby>帰<rt>かえ</rt></ruby>り。</p>
+            <ul class="list">
+              <li>マナー：<ruby>道<rt>みち</rt></ruby>を<ruby>外<rt>はず</rt></ruby>れない／<ruby>動植物<rt>どうしょくぶつ</rt></ruby>に<ruby>配慮<rt>はいりょ</rt></ruby></li>
+              <li>アクセス：<ruby>路面電車<rt>ろめんでんしゃ</rt></ruby>＋<ruby>徒歩<rt>とほ</rt></ruby></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Kurashiki -->
+        <article class="card">
+          <img alt="Kurashiki Bikan Historical Quarter"src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Kurashiki_Bikan_historical_quarter_20190324-2.jpg" />
+          <div class="card-body">
+            <span class="tag">倉敷美観地区</span>
+            <h3><ruby>運河<rt>うんが</rt></ruby><ruby>沿<rt>ぞ</rt></ruby>いの<ruby>景観<rt>けいかん</rt></ruby>と<ruby>職人<rt>しょくにん</rt></ruby>の<ruby>技<rt>わざ</rt></ruby></h3>
+            <p>マイバッグでプラ<ruby>削減<rt>さくげん</rt></ruby>。<ruby>地元<rt>じもと</rt></ruby>の<ruby>手仕事<rt>てしごと</rt></ruby>を<ruby>応援<rt>おうえん</rt></ruby>。</p>
+            <ul class="list">
+              <li>歩きやすい<ruby>靴<rt>くつ</rt></ruby>／写真は人への配慮</li>
+              <li>アクセス：JR倉敷駅から徒歩</li>
+            </ul>
+          </div>
+        </article>
+
+        <!--Seto Inland Sea -->
+        <article class="card">
+          <img alt="Seto Inland Sea from Mt. Washu"src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Mount_Washu_-_Looking_at_the_Seto_Inland_Sea.jpg" />
+          <div class="card-body">
+            <span class="tag"><ruby>瀬戸内海<rt>せとないかい</rt></ruby></span>
+            <h3>静かな海でカヤック体験</h3>
+            <p>波の<ruby>穏<rt>おだ</rt></ruby>やかな<ruby>内海<rt>ないかい</rt></ruby>。<ruby>野生生物<rt>やせいせいぶつ</rt></ruby>を驚かせない距離を<ruby>保<rt>たも</rt></ruby>つ。</p>
+            <ul class="list">
+              <li>ごみ持ち帰り／<ruby>日焼<rt>ひや</rt></ruby>け<ruby>対策<rt>たいさく</rt></ruby></li>
+              <li>アクセス：JR＋バス、レンタサイクル可</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Eco tips (short) -->
+  <section class="section" id="tips">
+    <div class="container">
+      <h2>エコのポイント<ruby>要点<rt>ようてん</rt></ruby></h2>
+      <p class="lead">マイボトル／<ruby>公共交通<rt>こうきょうこうつう</rt></ruby>／<ruby>静<rt>しず</rt></ruby>かな<ruby>場所<rt>ばしょ</rt></ruby>を<ruby>守<rt>まも</rt></ruby>る／<ruby>地産<rt>ちさん</rt></ruby>の<ruby>食<rt>しょく</rt></ruby>を<ruby>選<rt>えら</rt></ruby>ぶ。</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container inner">
+      <div>© <span id="year"></span> 岡山市エコツーリズム（デモ）</div>
+      <div><a href="#spots">スポット</a> ・ <a href="#tips">エコのポイント</a></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
